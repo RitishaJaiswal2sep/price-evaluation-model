@@ -31,9 +31,9 @@ def predict():
  
     prediction = model.predict(final_df)
     
-    if(float(features[5]) < (prediction - 50000.00)):
+    if(float(features[5]) < (prediction - 12000.00)):
         msg = 'Under Priced'
-    elif(float(features[5]) > (prediction + 50000.00)):
+    elif(float(features[5]) > (prediction + 12000.00)):
          msg = 'Over Priced'
     else:
          msg = 'Fairly Priced'
